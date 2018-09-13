@@ -15,6 +15,7 @@ qrc_mytetra.cpp
 
 /thirdParty/mimetex/build/bin/*
 
+build/
 build-*-Debug/*
 build-*-Release/*
 
