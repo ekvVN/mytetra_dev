@@ -1,3 +1,6 @@
+[build_requires]
+cmake_installer/3.12.1@conan/stable
+
 [requires]
 Qt/5.9.6@bincrafters/stable
 

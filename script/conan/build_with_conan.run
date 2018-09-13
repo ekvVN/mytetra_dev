@@ -1,4 +1,9 @@
 #!/bin/sh
 
-cd ../../build/
+cd ../../
+mkdir build 
+cd build
 conan install ..
+
+# Версия скачанного CMake
+cmake --version
