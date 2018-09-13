@@ -47,3 +47,9 @@ qrc_*.cpp
 
 # Ignore gitignore self
 # .gitignore
+
+#
+\.idea/
+
+# CMake
+cmake-build-*/
