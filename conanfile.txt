@@ -1,0 +1,5 @@
+[requires]
+Qt/5.9.6@bincrafters/stable
+
+[generators]
+cmake
