@@ -8,8 +8,8 @@ install:
 
 build_script:
   - mkdir build && cd build
-  - qmake ../mytetra.pro
-  - nmake
+  - cmake -G "Visual Studio %TOOLCHAIN_VERSION% Win64" ..
+  - cmake --build . --config release
 
 environment:
   PYTHON: "C:\\Python27"
