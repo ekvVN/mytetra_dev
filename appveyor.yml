@@ -2,8 +2,8 @@ build:
 
 install:
   - set PATH=%PATH%;%PYTHON%/Scripts/
-  - pip.exe install --upgrade pip
-  - pip.exe install --upgrade virtualenv
+  - python -m pip install --upgrade pip
+  - python -m pip install --upgrade virtualenv
   - pip.exe install conan # It install conan too
   - conan --version
   - conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
