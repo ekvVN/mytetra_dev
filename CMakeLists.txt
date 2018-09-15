@@ -1,7 +1,7 @@
 project(FoundationTimer)
-cmake_minimum_required(VERSION 3.12.1)
+cmake_minimum_required(VERSION 3.8.0)
 add_definitions("-std=c++11")
 
-message(${CMAKE_BINARY_DIR})
+message(CMake version = ${CMAKE_VERSION})
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
