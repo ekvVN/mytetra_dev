@@ -1,9 +1,7 @@
 #!/bin/sh
 
 cd ../../
-mkdir build 
-cd build
-conan install ..
-
-# Версия скачанного CMake
-cmake --version
+mkdir build && cd build
+conan install .. --build=missing
+qmake ../mytetra.pro
+make
