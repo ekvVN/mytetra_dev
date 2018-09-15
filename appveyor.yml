@@ -8,7 +8,9 @@ install:
   - conan --version
   - conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
   - mkdir build && cd build
-  - conan install .. --build=missing -s compiler="Visual Studio" -s compiler.version=%TOOLCHAIN_VERSION%
+#  - conan install .. --build=missing -s compiler="Visual Studio" -s compiler.version=%TOOLCHAIN_VERSION%
+  - conan install ..
+  - activate
   - cmake --version
 
 build_script:

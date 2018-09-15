@@ -2,7 +2,8 @@
 cmake_installer/3.10.0@conan/stable
 
 [requires]
-Qt/5.9.6@bincrafters/stable
+#Qt/5.9.6@bincrafters/stable
 
 [generators]
+virtualenv
 cmake
