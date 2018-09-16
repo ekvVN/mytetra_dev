@@ -53,3 +53,5 @@ qrc_*.cpp
 
 # CMake
 cmake-build-*/
+
+*.user
