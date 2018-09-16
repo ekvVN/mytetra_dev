@@ -25,4 +25,5 @@ matrix:
       before_install:
         - sudo pip install --upgrade pip
         - sudo pip install --upgrade virtualenv
-        - sudo pip install conan
+        # --ignore-installed (https://github.com/HelikarLab/candis/pull/36)
+        - sudo pip install conan --ignore-installed
