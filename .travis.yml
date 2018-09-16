@@ -2,7 +2,8 @@ sudo: required
 #dist: trusty
 
 install:
-  - conan install --build=missing
+#  - conan install .. --build=missing
+  - conan install ..
 
 script:
   - mkdir build && cd build
@@ -22,4 +23,6 @@ matrix:
         - CC=gcc-4.9
         - CXX=g++-4.9
       before_install:
+        - sudo pip install --upgrade pip
+        - sudo pip install --upgrade virtualenv
         - sudo pip install conan
