@@ -5,6 +5,8 @@ install:
   - mkdir build && cd build
 #  - conan install .. --build=missing
   - conan install ..
+  - source activate.sh
+  - cmake --version
 
 script:
 #  - mkdir build && cd build
