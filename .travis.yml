@@ -2,6 +2,8 @@ sudo: required
 dist: trusty
 
 install:
+  - conan --version
+  - conan remote add bincrafters https://api.bintray.com/conan/bincrafters/public-conan
   - mkdir build && cd build
 #  - conan install .. --build=missing
   - conan install ..
