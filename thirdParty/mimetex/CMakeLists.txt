@@ -12,8 +12,8 @@ set(HEADERS_FILES
         mimetex.h
         texfonts.h)
 
-target_compile_definitions(${PROJECT_NAME} PUBLIC -DAA)
 add_library(${PROJECT_NAME} ${SOURCE_FILES} ${HEADERS_FILES})
+target_compile_definitions(${PROJECT_NAME} PUBLIC -DAA)
 
 
 #OBJECTS_DIR = $${_PRO_FILE_PWD_}/build/obj
