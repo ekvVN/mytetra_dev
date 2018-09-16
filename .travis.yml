@@ -1,0 +1,25 @@
+sudo: required
+#dist: trusty
+
+install:
+  - conan install --build=missing
+
+script:
+  - mkdir build && cd build
+  - cmake ..
+  - cmake --build .
+
+matrix:
+  include:
+    - os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-4.9
+      env:
+        - CC=gcc-4.9
+        - CXX=g++-4.9
+      before_install:
+        - sudo pip install conan
