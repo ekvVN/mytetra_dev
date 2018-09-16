@@ -19,6 +19,6 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 find_package(Qt5Widgets CONFIG REQUIRED)
 
 
-#add_subdirectory(app)
 add_subdirectory(tmp)
+add_subdirectory(app)
 add_subdirectory(thirdParty/mimetex)
