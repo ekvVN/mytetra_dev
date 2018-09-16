@@ -7,3 +7,6 @@ Qt/5.9.6@bincrafters/stable
 [generators]
 virtualenv
 cmake
+
+[options]
+Qt:qtsvg=True
