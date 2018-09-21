@@ -255,4 +255,5 @@ target_link_libraries(${PROJECT_NAME}
         Qt5::Xml
         Qt5::Svg
         Qt5::Network
+        Qt5::PrintSupport
         )
